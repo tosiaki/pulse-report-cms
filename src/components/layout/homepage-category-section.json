@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_homepage_category_sections",
+  "info": {
+    "displayName": "HomepageCategorySection",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "display_title": {
+      "type": "string"
+    },
+    "number_of_articles": {
+      "type": "integer",
+      "default": 6
+    }
+  }
+}
