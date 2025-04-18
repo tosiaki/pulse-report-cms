@@ -65,6 +65,14 @@
       "relation": "manyToOne",
       "target": "api::source.source",
       "inversedBy": "articles"
+    },
+    "is_advertisement": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "external_url": {
+      "type": "string"
     }
   }
 }
