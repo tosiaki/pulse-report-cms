@@ -9,7 +9,7 @@ export default [
       headers: '*', // Allow all standard headers
       // Define origins allowed to access your Strapi API
       origin: [
-          process.env.FRONTEND_URL || 'http://localhost:3000', // Your Vercel frontend URL
+          process.env.TEST_URL || process.env.FRONTEND_URL || 'http://localhost:3000', // Your Vercel frontend URL
           'http://localhost:1337', // Strapi admin panel origin (optional but good)
           // Add any other origins that need access (e.g., staging frontend)
       ],
